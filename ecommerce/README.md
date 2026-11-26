@@ -27,7 +27,7 @@ Table: `ecommerce_sales` (1,000 rows, generated with a recursive CTE so the whol
 
 ## Questions and Solutions
 
-### Q1. View all orders *(Basic)*
+### Q1. View all orders 
 
 **Business question:** Show every record in the table.
 
@@ -37,7 +37,7 @@ SELECT * FROM ecommerce_sales;
 
 **Output**
 
-*1,000 rows returned. First 3 shown:*
+* 1,000 rows returned. First 3 shown:*
 
 | Order_ID | Customer_ID | Product | Category | Quantity | Price | Order_Date | City |
 |---|---|---|---|---|---|---|---|
@@ -50,7 +50,7 @@ SELECT * FROM ecommerce_sales;
 
 ---
 
-### Q2. High-priced orders *(Basic)*
+### Q2. High-priced orders 
 
 **Business question:** Which orders have a price above ₹20,000?
 
@@ -62,7 +62,7 @@ WHERE Price > 20000;
 
 **Output**
 
-*500 rows returned. First 3 shown:*
+* 500 rows returned. First 3 shown:*
 
 | Order_ID | Customer_ID | Product | Category | Quantity | Price | Order_Date | City |
 |---|---|---|---|---|---|---|---|
@@ -75,7 +75,7 @@ WHERE Price > 20000;
 
 ---
 
-### Q3. Premium electronics *(Basic)*
+### Q3. Premium electronics 
 
 **Business question:** Which Electronics orders are priced above ₹30,000?
 
@@ -101,7 +101,7 @@ WHERE Category = 'Electronics'
 
 ---
 
-### Q4. Orders from Mumbai or Pune *(Basic)*
+### Q4. Orders from Mumbai or Pune 
 
 **Business question:** How many orders come from Mumbai or Pune?
 
@@ -113,7 +113,7 @@ WHERE City IN ('Mumbai', 'Pune');
 
 **Output**
 
-*200 rows returned. First 3 shown:*
+* 200 rows returned. First 3 shown:*
 
 | Order_ID | Customer_ID | Product | Category | Quantity | Price | Order_Date | City |
 |---|---|---|---|---|---|---|---|
@@ -126,7 +126,7 @@ WHERE City IN ('Mumbai', 'Pune');
 
 ---
 
-### Q5. Selected categories *(Basic)*
+### Q5. Selected categories 
 
 **Business question:** Show orders in Electronics, Computers or Mobile.
 
@@ -138,7 +138,7 @@ WHERE Category IN ('Electronics', 'Computers', 'Mobile');
 
 **Output**
 
-*600 rows returned. First 3 shown:*
+* 600 rows returned. First 3 shown:*
 
 | Order_ID | Customer_ID | Product | Category | Quantity | Price | Order_Date | City |
 |---|---|---|---|---|---|---|---|
@@ -151,7 +151,7 @@ WHERE Category IN ('Electronics', 'Computers', 'Mobile');
 
 ---
 
-### Q6. Top 10 most expensive orders *(Basic)*
+### Q6. Top 10 most expensive orders 
 
 **Business question:** Which are the 10 most expensive orders?
 
@@ -184,7 +184,7 @@ LIMIT 10;
 
 ---
 
-### Q7. Overall sales statistics *(Intermediate)*
+### Q7. Overall sales statistics 
 
 **Business question:** What are the total quantity, average, maximum and minimum price?
 
@@ -208,7 +208,7 @@ SELECT MIN(Price)    AS Minimum_Price  FROM ecommerce_sales;
 
 ---
 
-### Q8. Quantity sold by category *(Intermediate)*
+### Q8. Quantity sold by category 
 
 **Business question:** How many units were sold in each category?
 
@@ -233,7 +233,7 @@ GROUP BY Category;
 
 ---
 
-### Q9. Categories above 1,000 units *(Intermediate)*
+### Q9. Categories above 1,000 units 
 
 **Business question:** Which categories sold more than 1,000 units?
 
@@ -257,7 +257,7 @@ HAVING SUM(Quantity) > 1000;
 
 ---
 
-### Q10. Top 5 orders with key details *(Intermediate)*
+### Q10. Top 5 orders with key details 
 
 **Business question:** Show the 5 highest-priced orders with ID, product, category, price and city.
 
