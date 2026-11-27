@@ -39,5 +39,5 @@ MySQL 8, MySQL Workbench, Git and GitHub
 
 ## About Me
 
-**Aditya Gavali** | Aspiring Data Analyst
+**Aditya Gavali** | Aspiring Data Scientist
 [LinkedIn](https://www.linkedin.com/in/aditya-gavali-5b245b343/) · [Email](mailto:gavaliaditya14@gmail.com)
